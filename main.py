@@ -50,8 +50,6 @@ if "__main__" == __name__:
 
 		sessionBrowser.post(returnCommands.loginUrl,data=dictLogin)
 
-		print(returnCommands)
-
 		if 'logado_true' in sessionBrowser.get(returnCommands.verifySession).text:
 			print("[+] Usuário Logado")
 
